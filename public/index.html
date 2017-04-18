@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OAuth Redirect Bounce</title>
+    <style type="text/css">
+        body{font-family: sans-serif; margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}
+        h1,h2,h3{line-height:1.2}
+    </style>
+</head>
+<body>
+    <h1>OAuth Redirect Bounce</h1>
+
+    App developers can use this domain as an OAuth callback redirect URL for custom schemes.<p>
+
+    For example, an Authorization Server may require the callback redirect URL to start with <var>https://</var> but your mobile app requires a custom scheme, such as <var>foo://bar/baz</var><p>
+
+    In that case, you can set your callback redirect URL to:<br>
+    <code>https://oauth.click/foo/bar/baz</code><p>
+
+    That will redirect to:<br>
+    <code>foo://bar/baz</code><p>
+
+    Note: we do not support <var>http</var> nor <var>https</var> for custom schemes, since you should use your own server with https in that case.
+</body>
+</html>

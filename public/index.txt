@@ -1,0 +1,18 @@
+OAuth Redirect Bounce
+---------------------
+
+App developers can use this domain as an OAuth callback redirect URL for custom schemes.
+
+For example, an Authorization Server may require the callback redirect URL to start with
+    https://
+but your mobile app requires a custom scheme, such as
+    foo://bar/baz
+
+In that case, you can set your callback redirect URL to:
+    https://oauth.click/foo/bar/baz
+That will redirect to:
+    foo://bar/baz
+
+Note: we do not support "http" nor "https" for custom schemes,
+since you should use your own server with https in that case.
+
