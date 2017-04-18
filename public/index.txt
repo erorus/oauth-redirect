@@ -16,3 +16,5 @@ That will redirect to:
 Note: we do not support "http" nor "https" for custom schemes,
 since you should use your own server with https in that case.
 
+Find the config for this on Github:
+https://github.com/erorus/oauth-redirect
